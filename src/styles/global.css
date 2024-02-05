@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+}
+
+/* Define the status dot container */
+.status-dot-container {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define the status dot */
+.status-dot {
+  width: 100%;
+  height: 100%;
+  background-color: #00ff00; /* Use a brighter green color */
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate; /* Apply the pulsating animation */
+  border: none !important; /* Remove any border */
+  box-shadow: none !important; /* Remove any box shadow */
+}
+
+/* Define the status dot container */
+.status-dot-container {
+  width: 20px; /* Adjust the size as needed */
+  height: 20px; /* Adjust the size as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Define the status dot */
+.status-dot-offline {
+  width: 100%;
+  height: 100%;
+  background-color: #ff0000; /* Use a brighter green color */
+  border-radius: 50%;
+  animation: pulse 1s infinite alternate; /* Apply the pulsating animation */
+  border: none !important; /* Remove any border */
+  box-shadow: none !important; /* Remove any box shadow */
+}
+
+/* Define the pulsating animation */
+@keyframes pulse {
+  0% {
+    transform: scale(1); /* Initial size */
+    opacity: 1; /* Initial opacity */
+  }
+  100% {
+    transform: scale(1.2); /* Slightly larger size */
+    opacity: 0.6; /* Reduced opacity */
+  }
+}

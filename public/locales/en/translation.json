@@ -1,0 +1,219 @@
+{
+  "account": {
+    "livebetTitle": "Player betting history",
+    "title": "Account",
+    "titleIsMe": "Account"
+  },
+  "components": {
+    "bridgeswap": {
+      "cta": "Start Playing With Tokens",
+      "step1": "1. To bridge to XDC, visit <swaplink>SimpleSwap</swaplink>, select the token you wish to exchange, choose XDC as your desired receipt token, and click 'Exchange' to proceed.",
+      "step2": "2. Copy your XDC address from here and paste it under the wallet address field on <swaplink>SimpleSwap</swaplink>.",
+      "step3": "3. Click \"Create an exchange\" and then follow the instructions to deposit through your wallet.",
+      "step4": "1. To exchange XDC tokens for xUSDT, go to <xsplink>XSPSwap</xsplink>, connect your wallet, choose XDC and xUSDT as your swap pair, and then click 'Swap'.",
+      "step5": "2. Once the swap has been successful you can start playing.",
+      "next": "Next",
+      "back": "Back",
+      "nextDone": "Done",
+      "nextSwap": "Swap to xUSDT"
+    },
+    "cookiesBanner": {
+      "acceptButton": "Understood, let's play!",
+      "ariaLabel": "Cookies Banner",
+      "declineButton": "Leave",
+      "declineRedirect": "https://degaming.io",
+      "message": "By continuing to use our site, you agree to our use of cookies. We deploy first-party cookies for essential functions such as authentication. Additionally, we utilize third-party cookies for analyzing site traffic through Google Analytics.",
+      "title": "This website uses cookies"
+    },
+    "footer": {
+      "disclaimer": "Embark on a secure gaming journey with connectandplay.vercel.app, your trusted blockchain casino. Our groundbreaking design removes the central 'House,' guaranteeing the safety of your funds. Utilizing smart contracts on a decentralized blockchain, we offer a transparent and secure environment, empowering you with full control over your funds while enjoying a diverse range of casino games.",
+      "legal": {
+        "privacy": "Privacy Policy",
+        "rgs": "Responsible Gaming",
+        "terms": "Terms & Conditions",
+        "title": "Legal"
+      },
+      "logoAlt": "Logo",
+      "platform": {
+        "contactUs": "Contact Us",
+        "support": "Support",
+        "title": "Platform"
+      },
+      "socials": {
+        "title": "Socials"
+      }
+    },
+    "hero": {
+      "header": "Heads or tails? Gold awaits!",
+      "subheader": "Are you feeling lucky? Put your fate to the test with a single coin flip."
+    },
+    "leftdrawer": {
+      "accountCategory": "Personal",
+      "gamesCategory": "Games",
+      "leaderboard": "Leaderboard",
+      "myAccount": "My account",
+      "socialsCategory": "Connect"
+    },
+    "livebets": {
+      "header": "Live bets",
+      "noLiveBetsMessage": "Currently no live bets to display."
+    },
+    "playercard": {
+      "edit": "Edit",
+      "editName": "Edit name",
+      "noAddress": "No address",
+      "noName": "No username"
+    },
+    "ranklist": {
+      "player": "Player",
+      "rank": "Rank",
+      "title": "Leaderboard",
+      "volume": "Wagering"
+    },
+    "responsivetable": {
+      "header": {
+        "betAmount": "Bet Amount",
+        "dateTime": "Time",
+        "game": "Game",
+        "multiplier": "Multiplier",
+        "payout": "Payout",
+        "player": "Player"
+      },
+      "time": {
+        "days": "{value, number}d ago",
+        "hours": "{value, number}h ago",
+        "minutes": "{value, number}m ago",
+        "seconds": "Just now"
+      }
+    },
+    "username": {
+      "cancelEdit": "Cancel edit",
+      "hello": "Hello",
+      "placeholder": "Please enter your name",
+      "save": "Save name",
+      "title": "Change username"
+    },
+    "walletButton": {
+      "connectTitle": "Connect Wallet",
+      "connectTitleShort": "Connect",
+      "unsupportedChainTitle": "Wrong Network"
+    },
+    "leaderboardButton": {
+      "title": "Leaderboard"
+    },
+    "walletDropdown": {
+      "balanceRow": {
+        "title": "Wallet Balance",
+        "addFundsButton": "Increase Balance"
+      },
+      "sessionBalanceRow": {
+        "title": "Session Balance",
+        "addFundsButton": "Top-up",
+        "addButton1": "+10",
+        "addButton2": "+50",
+        "addButton3": "Max",
+        "placeholder": "e.g. 10",
+        "helperText": "Enter amount for casino play"
+      },
+      "cashOutRow": {
+        "title": "Done playing?",
+        "button": "Withdraw",
+        "description": "Click 'Withdraw' to immediately transfer all funds back to your wallet."
+      }
+    },
+    "walletDropdownButton": {
+      "title": "Session"
+    },
+    "bankrollDropdownButton": {
+      "title": "Bankroll"
+    },
+    "bankrollDropdown": {
+      "bankrollRow": {
+        "selectButton": "Select",
+        "selectedButton": "Selected"
+      }
+    }
+  },
+  "login": {
+    "message": "You need to sign a message on your wallet to prove ownership of the address you are connected with."
+  },
+  "name": "",
+  "privacy": {
+    "privacyPolicy": {
+      "body": "<p>Connect and Play Demo's privacy policy encompasses the confidentiality of personal information provided to us. Personal confidentiality could include data such as your name, address, phone numbers, email address, identification information, and banking information.</p>"
+    },
+    "acceptance": {
+      "title": "Acceptance of Privacy Policy",
+      "body": "<p>By accessing this website, you are contractually accepting the Terms and Agreement of our Privacy Policy.</p>"
+    },
+    "cookies": {
+      "title": "Use of Cookies",
+      "body": "<p><sitelink>https://connectandplay.vercel.app</sitelink> may utilize cookies to collect information through our web server, solely for the purpose of maintaining your privacy and security.</p>"
+    },
+    "contact": {
+      "title": "Contact Us",
+      "body": "<p>For further questions or concerns about these matters, please refer to our Support page. Our staff will be more than glad to assist you.</p>"
+    },
+    "title": "Privacy Policy"
+  },
+  "site": {
+    "description": "Cassio is the best way to play.",
+    "name": "Cassio - The best way to play",
+    "title": "Cassio"
+  },
+  "rgs": {
+    "title": "Responsible Gambling",
+    "rgs": {
+      "body": "<p>At <sitelink>https://connectandplay.vercel.app</sitelink>, we prioritize our players' enjoyment and advocate for responsible gaming.</p><p>Our aim is to foster a responsible gaming environment, assisting you in taking actions to ensure that your betting experience remains entertaining and safe without becoming a financial burden.</p>"
+    },
+    "aspects": {
+      "body": "<title>Key aspects of our responsible gaming approach include:</title><ul><li>Age Verification:</li><li>No players under 18 years of age are permitted.</li><li>Legal Compliance:</li><li>Strict measures are in place to prevent illegal players from using our site.</li><li>Fair Gaming:</li><li>Our commitment to fair play is evident in all our games.</li><li>Player Control:</li><li>You have the option to quit at any time if you find that gambling is negatively impacting you.</li></ul>"
+    },
+    "assistance": {
+      "body": "<title>Getting Assistance:</title><p>If you or someone you know is facing challenges with gambling, various organizations offer support and assistance. We recommend reaching out to self-help organizations for additional help. The following websites provide advice, guidance, and confidential support:</p><ul><li><sitelink>www.gamblersanonymous.org</sitelink></li><li><sitelink>www.gamcare.org.uk</sitelink></li><li><sitelink>www.gamblingtherapy.org</sitelink></li></ul>"
+    },
+    "selfExclusion": {
+      "body": "<title>Self-Exclusion:</title><p>If you believe you have a gambling problem or wish to take a break from gaming, <sitelink>https://connectandplay.vercel.app</sitelink> empowers you to self-exclude. Set deposit restrictions in your profile page before playing, or choose to exclude yourself permanently by contacting our Customer Care team via support@degaming.io.</p>"
+    },
+    "concern": {
+      "body": "<title>Concerned about Gambling? Ask Yourself:</title><p>If you're unsure whether you have a gambling problem, consider the following questions:</p><ul><li>Have others criticized your gambling?</li><li>Have you lied to cover up your gambling activities?</li><li>Do frustrations make you want to gamble?</li><li>Do you gamble alone for extended periods?</li><li>Have you skipped work, school, or other commitments to gamble?</li></ul><p>If you answer 'yes' to some or all of these questions, you may have a gambling problem and may want to seek help and advice from the following websites:</p><ul><li><sitelink>www.gamblersanonymous.org</sitelink></li><li><sitelink>www.gamcare.org.uk</sitelink></li><li><sitelink>www.gamblingtherapy.org</sitelink></li></ul><p>Remember, responsible gaming is a shared responsibility, and seeking help is a proactive step toward a healthier relationship with gambling.</p>"
+    }
+  },
+  "terms": {
+    "introduction": {
+      "body": "<title>1. Introduction</title><p>By utilizing any part of the company website https://connectandplay.vercel.app, the client is considered to have entered into a contract with https://connectandplay.vercel.app and is obligated to adhere to these general conditions, along with our Privacy Policy, Cookies Policy etc.</p><p>It may be necessary to modify these general conditions from time to time without prior notice, for various reasons. All modifications will be published on our page.</p><p>It is essential to acknowledge that access to and/or use of the website may be unlawful in certain countries. It is the customer's responsibility to ensure that such access and use comply with the applicable laws of their country of residence, and to confirm that gambling is legal in their jurisdiction.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> is dedicated to providing excellent Customer Service, promoting responsible gaming as part of this commitment.</p>"
+    },
+    "accountCreation": {
+      "body": "<title>2. Creation of a https://connectandplay.vercel.app Account</title><p>All individuals must be at least 18 years old and possess the legal capacity to register and bet on <sitelink>https://connectandplay.vercel.app</sitelink>. <sitelink>https://connectandplay.vercel.app</sitelink> reserves the right to request documentation verifying age and may suspend the account until such information is provided.</p><p>Clients must personally register, and all information provided during registration on this website must be accurate and complete. Failure to comply may result in the suspension of the gaming account and cancellation of any deposits (including associated winnings).</p><p><sitelink>https://connectandplay.vercel.app</sitelink> reserves the right to verify customer addresses by requesting documentation such as a service account, bank statement, or proof of residence.</p><p>By accepting the General Conditions, the client agrees that <sitelink>https://connectandplay.vercel.app</sitelink> has the right to request identification, verification, or other checks as needed. The client agrees to provide all necessary information for these verification checks. Failure to comply may result in the suspension or restriction of the account.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> retains the right to deny account registration to any client at its sole discretion.</p>"
+    },
+    "suspension": {
+      "body": "<title>3. Suspension and Closure</title><p>To close your account, please contact us</p><p><sitelink>https://connectandplay.vercel.app</sitelink> reserves the right to close or suspend a client's account at any time. This includes situations where:</p><ul><li><sitelink>https://connectandplay.vercel.app</sitelink> believes the client is using the website fraudulently or for inappropriate purposes.</li><li><sitelink>https://connectandplay.vercel.app</sitelink> believes the client has unfairly exploited or cheated in any games, services, or bonuses.</li></ul><p>If <sitelink>https://connectandplay.vercel.app</sitelink> closes or suspends a client's account for the above reasons, the platform also has the right to retain any balance, including winnings, bet credits, or bonus payments.</p>"
+    },
+    "incomeAndBets": {
+      "body": "<title>4. Income and Bets</title><p>Bets can only be placed with funds credited through deposits into the client's account or, in some cases, bonuses provided by <sitelink>https://connectandplay.vercel.app</sitelink>. To place bets or participate in games, clients must make a deposit into their account.</p><p>Deposits should be made solely for the purpose of playing or placing bets on any of our services. <sitelink>https://connectandplay.vercel.app</sitelink> reserves the right to suspend or close an account if it suspects the client deposited money without the intention to play or place bets.</p><p>Only deposits by the account holder will be accepted. If the account holder differs from the registered <sitelink>https://connectandplay.vercel.app</sitelink> data, any entries in the gaming account may be treated as invalid (with associated earnings considered null).</p>"
+    },
+    "withdrawals": {
+      "body": "<title>5. Withdrawals</title><p>Withdrawals will be credited to the account from which deposits were made whenever possible.</p>"
+    },
+
+    "other": {
+      "body": "<title>6. Other</title><p>Clients are responsible for reporting gains and losses to tax authorities or other competent authorities in their jurisdiction.</p><p>Gambling over the Internet may be illegal in the customer's country, and if so, the customer is not authorized to use their payment card for transactions. However, any bets approved from the customer's jurisdiction will prevail, whether they win or lose.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> is not a financial institution, and no interest is paid on the client.</p>"
+    },
+    "obligations": {
+      "body": "<title>Our Obligations</title><p><sitelink>https://connectandplay.vercel.app</sitelink> is exempt from liability for potential damages, losses, or alleged liability related to the website or its content.</p><p>While <sitelink>https://connectandplay.vercel.app</sitelink> endeavors to ensure the accuracy of website information, it does not guarantee the completeness or accuracy of the material. The website may contain typographical errors, inaccuracies, or outdated information, and <sitelink>https://connectandplay.vercel.app</sitelink> is not obligated to update such information.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> is obliged to enforce these terms and conditions, as well as all rules published on our site.</p>"
+    },
+    "ip": {
+      "body": "<title>Our Intellectual Property Rights</title><p>The website's contents are protected by copyright laws and other intellectual property rights, with ownership belonging to <sitelink>https://connectandplay.vercel.app</sitelink>.</p><p>All products, names, and company logos mentioned on the website are registered trademarks, service marks, or trade names of their respective owners, suppliers, teams, including https://connectandplay.vercel.app.</p>"
+    },
+    "complaints": {
+      "body": "<title>Complaints</title><p>For complaints, contact our Customer Support Department via email at support@degaming.io.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> will make every effort to promptly resolve reported issues.</p><p>Queries regarding transactions can also be directed to https://connectandplay.vercel.app with the details of the query. While our decision is final, it will be thoroughly reviewed and confirmed with our service providers.</p>"
+    },
+    "breaches": {
+      "body": "<title>Breaches and Penalties</title><p>If you breach any provision of these Terms and Conditions or if <sitelink>https://connectandplay.vercel.app</sitelink> has reasonable grounds to suspect a breach, it reserves the right to not open, suspend, or close your account, or retain money in your account due to damages caused by you.</p><p><sitelink>https://connectandplay.vercel.app</sitelink> may freeze or terminate your account if it suspects your involvement in illegal or fraudulent activities, breaches of this Agreement, or if you pose a risk to our business. The decision to suspend or permanently ban participation on our site is at the sole discretion of <sitelink>https://connectandplay.vercel.app</sitelink>.</p><p>You acknowledge that <sitelink>https://connectandplay.vercel.app</sitelink> has the final decision on whether you violated the Terms and Conditions in a way that results in suspension or permanent ban from participating on our site.</p>"
+    },
+    "conduct": {
+      "body": "<title>Code of Conduct</title><p>To contact us, adhere to the following recommendations. Failure to comply with these recommendations may result in the permanent closure of your account without compensation, refund, or retention of any profits generated on <sitelink>https://connectandplay.vercel.app</sitelink> if your messages:</p><ul><li>Are sexually explicit or highly offensive.</li><li>Use derogatory terms and/or incite hatred.</li><li>Are abusive, defamatory, harass, threaten, or cause distress or annoyance to our support agents.</li></ul>"
+    },
+    "title": "Terms & Conditions"
+  }
+}
