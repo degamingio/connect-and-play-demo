@@ -1,5 +1,5 @@
-# cap-demo
-Connect and Play
+# Connect and Play Demo
+Connect and Play 
 
 ## Need to
 install  Node.js 18.17 or later.
@@ -17,11 +17,13 @@ pnpm dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-# Guide to Playing with Mocked Tokens
+
+## Guide to Playing with Mocked Tokens
 
 This guide will help you get started with MetaMask extension and mocked tokens.
 
-## Getting Started
+
+### Getting Started
 
 1. **Install MetaMask Extension**: Add the MetaMask extension to your browser.
    - Follow the setup guide provided by MetaMask. If you're only using it for testing, you can skip the security steps.
@@ -34,7 +36,7 @@ This guide will help you get started with MetaMask extension and mocked tokens.
 
 Congratulations! You now have access to the test network we are using. 🕺
 
-## Acquiring Mocked Tokens
+### Acquiring Mocked Tokens
 
 1. **Send Your Wallet Address**: Forward your wallet address (not your private key! 🚫👂) to your DeGaming contact person.
    - They will send you some TXDCs. 💸💰
@@ -48,7 +50,7 @@ Congratulations! You now have access to the test network we are using. 🕺
 
 You have successfully minted 1000 tokens! 🎉 As long as you have TXDC, you can continue minting.
 
-## Optional: Adding Tokens to MetaMask
+### Optional: Adding Tokens to MetaMask
 
 If you wish to see mUSD or mUSDT in MetaMask:
 
@@ -57,3 +59,12 @@ If you wish to see mUSD or mUSDT in MetaMask:
 
 - **mUSD Address**: `0xb0F5c667e9aB3144cF6b2E9B03805a87955bdC07`
 - **mUSDT Address**: `0xfBA6CED88170e86DA9F49902055cF80A62F1AC4a`
+
+## Add Funds to Bankroll
+- Go to [https://localhost:3000/bankroll](https://localhost:3000/bankroll).
+- Connect MetaMask via the top right corner.
+- Select the token/bankroll you want to fund (mUSD, mUSDT).
+- Enter amount in the input field and click "APPROVE"
+- Accept the "Allowance" request with MetaMask
+- Enter the amount you want to fund the bankroll with and click "PROVIDE LIQUIDITY" 
+- Accept request with MetaMask
