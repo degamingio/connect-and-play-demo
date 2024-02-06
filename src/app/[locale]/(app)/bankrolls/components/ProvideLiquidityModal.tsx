@@ -12,7 +12,7 @@ import Modal from '@mui/material/Modal';
 import Typography from '@mui/material/Typography';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import { useEffect, useState } from 'react';
-import { Address } from 'viem';
+import { Address, parseUnits } from 'viem';
 import { useAccount, useContractRead } from 'wagmi';
 
 const AllowanceText = ({
@@ -142,7 +142,7 @@ const MintTestTokens = ({
     abi: bankroll?.tokenAbi,
     address: bankroll?.tokenAddress as Address,
     functionName: 'mint',
-    args: [accountAddress, 1000 * (bankroll?.tokenDecimals || 0)],
+    args: [accountAddress, parseUnits('1000', bankroll?.tokenDecimals || 0)],
   });
 
   return (
