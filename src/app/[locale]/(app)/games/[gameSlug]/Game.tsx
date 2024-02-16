@@ -60,8 +60,9 @@ const Game = ({ selectedGame }: { selectedGame: (typeof AppConfig.activeGames)[0
     const device = `&device=${isBigScreen ? 'DESKTOP' : 'MOBILE'}`;
     const gameCode = `&gameCode=${selectedGame.slug}`;
     const accountFundId = `&accountFundId=${fund?._id}`;
+    const operatorCode = `&operatorCode=${AppConfig.operatorCode}`;
 
-    const queries = `${funMode}${lang}${device}${gameCode}${accountFundId}`;
+    const queries = `${funMode}${lang}${device}${gameCode}${accountFundId}${operatorCode}`;
     if (latestQuery === queries) return;
     setLatestQuery(queries);
 

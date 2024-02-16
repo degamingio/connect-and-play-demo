@@ -1,32 +1,26 @@
 'use client';
 
-import { Alert, Box, Stack, Typography, useTheme } from '@mui/material';
-import { useTranslations } from 'next-intl';
-
 import LoadingComponent from '@/components/General/Loading';
 import ResponsiveTable from '@/components/General/ResponsiveTable';
 import StatusDot from '@/components/LiveBets/StatusDot';
 import { useGameplayLogs } from '@/hooks/useGameplayLogs';
+import { Alert, Box, Stack, Typography, useTheme } from '@mui/material';
+import { useTranslations } from 'next-intl';
 
 type LiveBetsProps = {
   gameId?: string;
   playerAddress?: string;
-  casinoOperatorAddress?: string;
+  operatorCode?: string;
   title?: string;
 };
 
-const LiveBets = ({
-  gameId,
-  playerAddress,
-  casinoOperatorAddress,
-  title,
-}: LiveBetsProps) => {
+const LiveBets = ({ gameId, playerAddress, operatorCode, title }: LiveBetsProps) => {
   const t = useTranslations();
   const theme = useTheme();
 
   const { data, loading } = useGameplayLogs({
     playerAddress,
-    casinoOperatorAddress,
+    operatorCode,
     gameId,
   });
 

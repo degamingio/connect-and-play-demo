@@ -1,5 +1,7 @@
 'use client';
 
+import { AppConfig } from '@/config/AppConfig';
+import { QUERY_USER_STATISTICS } from '@/graphql/users/UserQuery';
 import { useQuery } from '@apollo/client';
 import {
   Card,
@@ -12,9 +14,6 @@ import {
   Typography,
 } from '@mui/material';
 import { styled, useTheme } from '@mui/material/styles';
-
-import { QUERY_USER_STATISTICS } from '@/graphql/users/UserQuery';
-import { AppConfig } from '@/config/AppConfig';
 
 type UserStats = {
   wagered: number;
@@ -50,7 +49,7 @@ const Row = ({ label, value }: { label: string; value: string | number }) => (
 const Statistics = ({ walletAddress }: { walletAddress: string }) => {
   const theme = useTheme();
   const { data } = useQuery<{ userStats: UserStats }>(QUERY_USER_STATISTICS, {
-    variables: { walletAddress, operator: AppConfig.operatorId },
+    variables: { walletAddress, operatorCode: AppConfig.operatorCode },
     skip: !walletAddress,
     fetchPolicy: 'network-only',
   });

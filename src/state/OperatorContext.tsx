@@ -24,7 +24,7 @@ export const OperatorProvider = ({ children }: { children: React.ReactNode }) =>
   useEffect(() => {
     if (loading) return;
     setLoading(true);
-    fetch(`${baseUrl}/operators/${AppConfig.operatorId}`)
+    fetch(`${baseUrl}/operators/${AppConfig.operatorCode}`)
       .then((res) => res.json())
       .then((o) => {
         setOperator(o);

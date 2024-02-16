@@ -1,12 +1,18 @@
 import { gql } from '@apollo/client';
 
-export const QUERY_USER_BY_WALLET_AND_OPERATOR = gql`
-  query GetUserByWalletAddressAndOperator($walletAddress: String!, $operator: String!) {
-    userByWalletAddressAndOperator(walletAddress: $walletAddress, operator: $operator) {
+export const QUERY_USER_BY_WALLET_AND_OPERATOR_CODE = gql`
+  query GetUserByWalletAddressAndOperatorCode(
+    $walletAddress: String!
+    $operatorCode: String!
+  ) {
+    userByWalletAddressAndOperatorCode(
+      walletAddress: $walletAddress
+      operatorCode: $operatorCode
+    ) {
       _id
       walletAddress
       name
-      operator
+      operatorCode
       lastLoginAt
       funds {
         _id
@@ -36,8 +42,8 @@ export const QUERY_USER_FUND_BY_ID = gql`
 `;
 
 export const QUERY_USER_STATISTICS = gql`
-  query UserStats($walletAddress: String!, $operator: String!) {
-    userStats(walletAddress: $walletAddress, operator: $operator) {
+  query UserStats($walletAddress: String!, $operatorCode: String!) {
+    userStats(walletAddress: $walletAddress, operatorCode: $operatorCode) {
       wagered
       totalBets
       totalWins

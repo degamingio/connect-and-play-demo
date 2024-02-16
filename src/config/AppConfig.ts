@@ -1,5 +1,5 @@
 import { Inter, Titillium_Web } from 'next/font/google';
-import type { Address, Chain } from 'viem';
+import type { Chain } from 'viem';
 import { xdc, xdcTestnet } from 'viem/chains';
 import { convertToCasinoGames } from './games';
 
@@ -15,7 +15,7 @@ const inter = Inter({
 
 // Update this configuration file based on your project information
 export const AppConfig = {
-  operatorId: 'CAP',
+  operatorCode: 'CAP',
   // Language for your site
   locales: ['en'],
 
@@ -60,7 +60,6 @@ export const AppConfig = {
   buttonTextColorDark: '#7D66A2',
 
   // WEB3
-  casinoOperatorAddress: '0x72A1080C0964448Fe835D87C7F4D141c446dEfa2' as Address,
   supportedChains: (process.env.NEXT_PUBLIC_ENVIRONMENT === 'prod'
     ? [{ chain: xdc, rpcUrl: xdc.rpcUrls.default.http[0] }]
     : [

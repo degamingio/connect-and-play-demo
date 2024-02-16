@@ -1,9 +1,7 @@
-import { Stack } from '@mui/material';
-
 import GameHeader from '@/components/Game/GameHeader';
 import LiveBets from '@/components/LiveBets/LiveBets';
 import { AppConfig } from '@/config/AppConfig';
-
+import { Stack } from '@mui/material';
 import Game from './Game';
 
 export async function generateMetadata({ params }: { params: { gameSlug: string } }) {
@@ -37,7 +35,11 @@ const GamePage = ({ params }: { params: { gameSlug: string } }) => {
         <GameHeader title={selectedGame.name} topTitle={selectedGame.studioName} />
         <Game selectedGame={selectedGame} />
       </Stack>
-      <LiveBets key={selectedGame.slug} gameId={selectedGame.slug} />
+      <LiveBets
+        key={selectedGame.slug}
+        gameId={selectedGame.slug}
+        operatorCode={AppConfig.operatorCode}
+      />
     </>
   );
 };

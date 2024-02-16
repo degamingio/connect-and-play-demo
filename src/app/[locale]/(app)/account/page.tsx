@@ -1,16 +1,14 @@
 'use client';
 
-import { Stack, Typography, useTheme } from '@mui/material';
-import { useRouter, useSearchParams } from 'next/navigation';
-import { useTranslations } from 'next-intl';
-import { useEffect, useState } from 'react';
-import { useAccount } from 'wagmi';
-
 import LiveBets from '@/components/LiveBets/LiveBets';
 import PlayerCard from '@/components/Player/Card';
 import Statistics from '@/components/Player/Statistics';
 import { AppConfig } from '@/config/AppConfig';
-import { UserProvider } from '@/state/UserContext';
+import { Stack, Typography, useTheme } from '@mui/material';
+import { useTranslations } from 'next-intl';
+import { useRouter, useSearchParams } from 'next/navigation';
+import { useEffect, useState } from 'react';
+import { useAccount } from 'wagmi';
 
 const AccountPage = () => {
   const { push } = useRouter();
@@ -52,7 +50,7 @@ const AccountPage = () => {
         <LiveBets
           title={t('account.livebetTitle')}
           playerAddress={address}
-          casinoOperatorAddress={AppConfig.casinoOperatorAddress}
+          operatorCode={AppConfig.operatorCode}
         />
       )}
     </>

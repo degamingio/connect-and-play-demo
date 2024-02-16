@@ -1,6 +1,6 @@
 import { AppConfig } from '@/config/AppConfig';
 import { UPDATE_USER_NAME } from '@/graphql/users/UserMutation';
-import { QUERY_USER_BY_WALLET_AND_OPERATOR } from '@/graphql/users/UserQuery';
+import { QUERY_USER_BY_WALLET_AND_OPERATOR_CODE } from '@/graphql/users/UserQuery';
 import { useMutation, useQuery } from '@apollo/client';
 import React, { createContext, useCallback, useContext, useMemo, useState } from 'react';
 import { useAccount } from 'wagmi';
@@ -48,11 +48,11 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
     loading: isLoading,
     error,
     data,
-    refetch: refetchUserByWalletAndOperator,
-  } = useQuery(QUERY_USER_BY_WALLET_AND_OPERATOR, {
+    refetch: refetchUserByWalletAndOperatorCode,
+  } = useQuery(QUERY_USER_BY_WALLET_AND_OPERATOR_CODE, {
     variables: {
       walletAddress: address,
-      operator: AppConfig.operatorId,
+      operatorCode: AppConfig.operatorCode,
     },
     skip: !address || siweStatus !== SiweStatus.authenticated,
     fetchPolicy: 'network-only',
@@ -77,13 +77,16 @@ export const UserProvider = ({ children }: { children: React.ReactNode }) => {
   const balanceIsUpdated = useCallback(async () => {
     setBalanceIsUpdating(true);
     await new Promise((res) => setTimeout(res, 400));
-    refetchUserByWalletAndOperator();
+    refetchUserByWalletAndOperatorCode();
     setBalanceIsUpdating(false);
   }, [updateUserMutation, address]);
 
   const value = useMemo(
     () => ({
-      user: { ...(data?.userByWalletAddressAndOperator || {}), walletAddress: address },
+      user: {
+        ...(data?.userByWalletAddressAndOperatorCode || {}),
+        walletAddress: address,
+      },
       isLoading,
       error,
       updateUser,

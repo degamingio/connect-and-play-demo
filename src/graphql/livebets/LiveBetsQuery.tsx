@@ -1,15 +1,11 @@
 import { gql } from '@apollo/client';
 
 export const GAMEPLAY_LOGS_QUERY = gql`
-  query GetGameplayLogs(
-    $gameId: String
-    $playerAddress: String
-    $casinoOperatorAddress: String
-  ) {
+  query GetGameplayLogs($gameId: String, $playerAddress: String, $operatorCode: String) {
     gameplayLogs(
       gameId: $gameId
       playerAddress: $playerAddress
-      casinoOperatorAddress: $casinoOperatorAddress
+      operatorCode: $operatorCode
     ) {
       _id
       gameId
@@ -20,7 +16,7 @@ export const GAMEPLAY_LOGS_QUERY = gql`
       hash
       playerAddress
       name
-      casinoOperatorAddress
+      operatorCode
       chainId
       gameName
       token
@@ -30,8 +26,8 @@ export const GAMEPLAY_LOGS_QUERY = gql`
 `;
 
 export const LEADERBOARD_QUERY = gql`
-  query GetLeaderboard {
-    leaderboard {
+  query GetLeaderboard($operatorCode: String!) {
+    leaderboard(operatorCode: $operatorCode) {
       name
       address
       volume
@@ -43,12 +39,12 @@ export const GAMEPLAY_LOGS_SUBSCRIBE = gql`
   subscription gameplayLogAdded(
     $gameId: String
     $playerAddress: String
-    $casinoOperatorAddress: String
+    $operatorCode: String
   ) {
     gameplayLogAdded(
       gameId: $gameId
       playerAddress: $playerAddress
-      casinoOperatorAddress: $casinoOperatorAddress
+      operatorCode: $operatorCode
     ) {
       _id
       gameId
@@ -59,7 +55,7 @@ export const GAMEPLAY_LOGS_SUBSCRIBE = gql`
       hash
       playerAddress
       name
-      casinoOperatorAddress
+      operatorCode
       chainId
       gameName
       token

@@ -66,7 +66,7 @@ const loginFlow = async (
       body: JSON.stringify({
         message,
         signature,
-        operator: AppConfig.operatorId,
+        operatorCode: AppConfig.operatorCode,
       }),
     }).then((res) => res.json());
 

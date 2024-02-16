@@ -1,11 +1,12 @@
 import LiveBets from '@/components/LiveBets/LiveBets';
 import GameCards from '@/components/StartPage/GameCards';
+import { AppConfig } from '@/config/AppConfig';
 
 const Home = () => {
   return (
     <>
       <GameCards />
-      <LiveBets />
+      <LiveBets operatorCode={AppConfig.operatorCode} />
     </>
   );
 };

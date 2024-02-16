@@ -1,5 +1,7 @@
 'use client';
 
+import { AppConfig } from '@/config/AppConfig';
+import { LEADERBOARD_QUERY } from '@/graphql/livebets/LiveBetsQuery';
 import { useQuery } from '@apollo/client';
 import {
   Stack,
@@ -12,10 +14,8 @@ import {
   TableRow,
   Typography,
 } from '@mui/material';
-import { useRouter } from 'next/navigation';
 import { useTranslations } from 'next-intl';
-
-import { LEADERBOARD_QUERY } from '@/graphql/livebets/LiveBetsQuery';
+import { useRouter } from 'next/navigation';
 import { DynamicShortenBitcoinAddress } from '../General/ShortenBitcoinAddress';
 
 const StyledCell = styled(TableCell)`
@@ -46,6 +46,9 @@ type LeaderboardRow = {
 const RankList = () => {
   const { data } = useQuery(LEADERBOARD_QUERY, {
     fetchPolicy: 'network-only',
+    variables: {
+      operatorCode: AppConfig.operatorCode,
+    },
   });
 
   const rows = (data?.leaderboard as LeaderboardRow[]) || [];

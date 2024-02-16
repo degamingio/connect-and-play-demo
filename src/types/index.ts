@@ -2,7 +2,7 @@ import { Address } from 'viem';
 
 type OperatorType = {
   name: string;
-  operatorId: string;
+  code: string;
   managerWalletAddress: Address;
   bankrolls: BankrollType[];
   createdAt: Date;

@@ -10,7 +10,7 @@ const Tokens = ({ bankrolls }: { bankrolls: Array<BankrollType> }) => {
   return (
     <Box>
       {bankrolls.map((token) => (
-        <Token key={token.tokenAddress} token={token} />
+        <Token key={token.contractAddress} token={token} />
       ))}
     </Box>
   );
@@ -21,7 +21,7 @@ const Token = ({ token }: { token: BankrollType }) => {
 
   return (
     <Button
-      variant={bankroll?.tokenAddress == token.tokenAddress ? 'outlined' : 'text'}
+      variant={bankroll?.contractAddress === token.contractAddress ? 'outlined' : 'text'}
       sx={{
         borderRadius: 10,
         textTransform: 'none',

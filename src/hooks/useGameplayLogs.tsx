@@ -1,22 +1,21 @@
-'use client'
-
-import { useQuery } from '@apollo/client';
-import { useEffect, useMemo } from 'react';
+'use client';
 
 import {
   GAMEPLAY_LOGS_QUERY,
   GAMEPLAY_LOGS_SUBSCRIBE,
 } from '@/graphql/livebets/LiveBetsQuery';
+import { useQuery } from '@apollo/client';
+import { useEffect, useMemo } from 'react';
 
 export const useGameplayLogs = ({
   playerAddress,
-  casinoOperatorAddress,
+  operatorCode,
   gameId,
   limit = 15,
   pause = false,
 }: {
   playerAddress?: string;
-  casinoOperatorAddress?: string;
+  operatorCode?: string;
   gameId?: string;
   limit?: number;
   pause?: boolean;
@@ -25,7 +24,7 @@ export const useGameplayLogs = ({
     variables: {
       playerAddress,
       gameId,
-      casinoOperatorAddress,
+      operatorCode,
     },
     fetchPolicy: 'network-only',
   });
@@ -39,7 +38,7 @@ export const useGameplayLogs = ({
       variables: {
         playerAddress,
         gameId,
-        casinoOperatorAddress,
+        operatorCode,
       },
       updateQuery: (prev, { subscriptionData }) => ({
         gameplayLogs: !subscriptionData.data
@@ -47,7 +46,7 @@ export const useGameplayLogs = ({
           : [subscriptionData.data.gameplayLogAdded, ...(prev?.gameplayLogs || [])],
       }),
     });
-  }, [subscribeToMore, playerAddress, gameId, casinoOperatorAddress, pause]);
+  }, [subscribeToMore, playerAddress, gameId, operatorCode, pause]);
 
   const value = useMemo(
     () => ({
